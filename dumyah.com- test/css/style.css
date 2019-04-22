@@ -1,0 +1,326 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgb(51, 55, 69);
+}
+
+/* Raiting Stars
+  -------------------------------------------------- */
+
+.stars {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.stars:hover .star polygon {
+  fill: #ffd055 !important;
+}
+
+.stars .star {
+  float: left;
+  float: left;
+  margin: 2px;
+}
+
+.stars .star polygon {
+  fill: #d8d8d8;
+}
+
+.stars .star:hover~.star polygon {
+  fill: #d8d8d8 !important;
+}
+
+.stars[data-stars] .star polygon {
+  fill: #ffd055;
+}
+
+.stars[data-stars="1"] .star:nth-child(1)~.star polygon {
+  fill: #d8d8d8;
+}
+
+.stars[data-stars="2"] .star:nth-child(2)~.star polygon {
+  fill: #d8d8d8;
+}
+
+.stars[data-stars="3"] .star:nth-child(3)~.star polygon {
+  fill: #d8d8d8;
+}
+
+.stars[data-stars="4"] .star:nth-child(4)~.star polygon {
+  fill: #d8d8d8;
+}
+
+.stars[data-stars="5"] .star:nth-child(5)~.star polygon {
+  fill: #d8d8d8;
+}
+
+/* General Rules
+  -------------------------------------------------- */
+
+nav {
+  background-color: rgb(36, 117, 160);
+}
+
+body {
+  background-color: #eaf0f3;
+}
+
+hr {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+p {
+  margin-bottom: 4%;
+}
+
+h5 {
+  font-size: 13px;
+  color: #2d303c !important;
+  text-decoration: none;
+}
+
+p>a {
+  color: #2d303c;
+}
+
+p>a:hover {
+  color: #2d303c;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+}
+
+/* Custom page CSS
+  -------------------------------------------------- */
+
+.container-footer {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+#product-container {
+  height: auto;
+  width: 100%;
+  display: block;
+  color: #2d303c;
+}
+
+#old-price {
+  text-decoration: line-through;
+  color: red;
+}
+
+#product-details {
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+#product-card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+nav {
+  margin-bottom: 4%;
+}
+
+.navbar-light .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #ffffff;
+}
+
+#Logo {
+  margin-bottom: 4%;
+}
+
+#Logo img {
+  width: 15%;
+  height: auto;
+  float: left;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  #Logo img {
+    width: 57%;
+    height: auto;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+}
+
+#filter-accordion-text {
+  font-size: 24px;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.form-control {
+  height: auto;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.d-flex p {
+  font-size: 14px;
+}
+
+#new_price {
+  text-align: center;
+}
+
+.fa, .fas {
+  font-weight: 900;
+  float: right;
+  margin-top: 2%;
+}
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope, .isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+#price-font {
+  font-size: 12px;
+}
+
+#position_filter {
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
+
+/* AutocompleteCSS
+  -------------------------------------------------- */
+
+.autocomplete-container {
+  position: relative;
+}
+
+.autocomplete {
+  display: flex;
+}
+
+.autocomplete-results {
+  position: relative;
+  margin-top: -1px;
+  border: 1px solid rgb(36, 117, 160, 0.3);
+  padding: 4px 0;
+  width: 85%;
+  z-index: 9999999999999999999;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: none;
+  margin-top: 5px;
+}
+
+.autocomplete-result {
+  cursor: default;
+  padding: 0px 0px;
+  height: 100%;
+}
+
+.autocomplete-result:hover {
+  background-color: rgb(36, 117, 160);
+  color: white;
+  opacity: 0.5;
+}
+
+.autocomplete-result.selected {
+  background-color: rgb(36, 117, 160);
+  color: white;
+}
+
+.search-result {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Slider CSS
+  -------------------------------------------------- */
+
+.sliders {
+  padding: 15px 0 30px 0;
+}
+
+.filter-section .filter-label {
+  display: block;
+  font-weight: bold;
+}
+
+.bootstrap-slider .slider-selection {
+  background: rgb(36, 117, 160);
+}
+
+/* pagination
+  -------------------------------------------------- */
